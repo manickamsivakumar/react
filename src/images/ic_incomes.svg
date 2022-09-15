@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.253" height="24.232" viewBox="0 0 24.253 24.232">
+  <g id="ic_incomes" transform="translate(83 -774.768)">
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(-83 775)" fill="none" stroke="#028cf3" stroke-width="1.5">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="11.25" fill="none"/>
+    </g>
+    <g id="currency_rupee_black_24dp" transform="translate(-83 775)">
+      <g id="Group_66" data-name="Group 66">
+        <rect id="Rectangle_77" data-name="Rectangle 77" width="24" height="24" fill="none"/>
+      </g>
+      <g id="Group_68" data-name="Group 68" transform="translate(1 3.306)">
+        <g id="Group_67" data-name="Group 67" transform="translate(6 3)">
+          <path id="Path_102" data-name="Path 102" d="M11.4,5.821A2.464,2.464,0,0,0,9.174,4.41H6V3h8.463V4.41h-2.3a3.868,3.868,0,0,1,.741,1.41h1.559v1.41H13.038a3.881,3.881,0,0,1-3.865,3.526H8.659l4.746,4.937H11.452L6.705,10.758V9.347H9.174a2.464,2.464,0,0,0,2.44-2.116H6V5.821Z" transform="translate(-6 -3)" fill="#028cf3"/>
+        </g>
+      </g>
+      <path id="Path_378" data-name="Path 378" d="M0,0H9V9H3.5L0,4.5Z" transform="translate(15)" fill="#fff"/>
+    </g>
+    <g id="Group_239" data-name="Group 239" transform="translate(-68 778.364) rotate(-45)">
+      <path id="Path_368" data-name="Path 368" d="M4,0h6.586" transform="translate(-3 4)" fill="none" stroke="#028cf3" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Path_60" data-name="Path 60" d="M904.793,268.207,901.5,271.5l3.293,3.293" transform="translate(-901.5 -267.5)" fill="none" stroke="#028cf3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

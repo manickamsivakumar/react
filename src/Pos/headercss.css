@@ -1,0 +1,35 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans:wght@300&display=swap");
+body {
+  background: #f2f6fa 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.header {
+  top: 0px;
+  left: 0px;
+  height: 138px;
+  /* UI Properties */
+  background: transparent linear-gradient(112deg, #028cf3 0%, #2feaa8 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(112deg, #028cf3 0%, #2feaa8 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.top-header-text {
+  color: #ffffff;
+  text-align: left;
+  font: normal normal normal 24px/37px Sofia Pro;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin: 0px;
+}
+.flex-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ic_notification" transform="translate(-266 -8)">
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="40" height="40" transform="translate(266 8)" fill="none"/>
+    <g id="Group_13" data-name="Group 13" transform="translate(-567 -329.5)">
+      <path id="Path_13" data-name="Path 13" d="M861,361.5V357a7.9,7.9,0,0,0-5.65-7.74,1.909,1.909,0,0,0,.15-.76,2,2,0,0,0-4,0,1.944,1.944,0,0,0,.15.76A7.912,7.912,0,0,0,846,357v4.5a2,2,0,0,0,0,4h15a2,2,0,0,0,0-4Z" fill="none" stroke="#028cf3" stroke-width="1.5" fill-rule="evenodd"/>
+      <path id="Path_14" data-name="Path 14" d="M853.5,369a3.5,3.5,0,0,0,3.5-3.5h-7A3.5,3.5,0,0,0,853.5,369Z" fill="none" stroke="#028cf3" stroke-width="1.5" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

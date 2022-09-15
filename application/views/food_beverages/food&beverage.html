@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+
+    
+
+
+  <style>
+    .hide {
+      display: none;
+    }
+
+    .pn {
+      padding: 0px !important;
+    }
+
+    .small_box {
+      padding: 0px;
+      margin-left: 5px;
+    }
+
+    .sm_inside {
+      padding-right: 18px !important;
+      padding-left: 21px !important;
+    }
+
+    .callout {
+      padding: 0px;
+    }
+
+    .fl {
+      font-size: 16px;
+    }
+
+    .sl {
+      font-size: 14px;
+    }
+
+    .one {
+      position: relative;
+    }
+
+    .two {
+      position: absolute;
+      margin-left: 1px;
+      margin-top: 12px;
+      font-size: 10px;
+    }
+
+    .c1 {
+      color: #ffc000;
+    }
+
+    .c2 {
+      color: #00b0f0;
+    }
+
+    .c3 {
+      color: #ff7d7d;
+    }
+
+    .callout.callout-danger {
+      border-left-color: #ffc000 !important;
+    }
+
+    .callout.callout-success {
+      border-left-color: #00b0f0 !important;
+    }
+
+    .callout.callout-warning {
+      border-left-color: #ff7d7d !important;
+    }
+
+    .ra {
+      margin-top: 15px;
+      font-size: 20px;
+      color: rgba(210, 214, 222, 1);
+    }
+
+    .main-footer {
+      background-color: #f4f6f9 !important;
+    }
+
+    .hh {
+      color: black;
+      font-size: 16px;
+
+    }
+
+    .hsh {
+      color: white;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .ci {
+
+      color: #ffbd00;
+      font-size: 20px;
+    }
+
+    .mi {
+      color: white;
+      background-color: #c11a00;
+    }
+
+    .brr {
+
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
+    }
+
+    .nvc {
+      position: fixed;
+      width: 100%;
+      overflow: hidden;
+      top: 0px;
+    }
+
+    .pln {
+      padding-left: 0px !important;
+    }
+
+    .t1 {
+      font-size: 15px;
+      color: white;
+    }
+
+    .t2 {
+      font-size: 15px;
+      color: black;
+    }
+
+    .fcc {
+
+      font-size: 14px;
+      background-color: #5cd2fd;
+      background-clip: padding-box;
+      border: 1px solid #5cd2fd;
+      height: 34px;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: white;
+      color: white;
+      text-align: center;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      color: rgb(255 255 255 / 80%);
+      background-color: #00948b;
+      border-color: #dee2e6 #dee2e6 #fff;
+    }
+
+    .nav-tabs {
+    border: 1px solid #dee2e6!important;
+}
+    
+
+    .fi {
+      font-size: 20px;
+    }
+
+    .calloutright1 {
+      border-right: 5px solid #0070c0 !important;
+      border-left: 0px !important;
+    }
+
+    .calloutright2 {
+      border-right: 5px solid #00b050 !important;
+      border-left: 0px !important;
+    }
+
+    .calloutright3 {
+      border-right: 5px solid #7030a0 !important;
+      border-left: 0px !important;
+    }
+
+
+    .acl {
+      font-size: 16px;
+
+      text-align: left;
+    }
+
+    .acl1 {
+
+      color: #0070c0;
+
+    }
+
+    .acl2 {
+
+      color: #00b050;
+
+    }
+
+    .acl3 {
+      color: #7030a0
+    }
+
+    .acr {
+      font-size: 20px;
+      color: #6c757dd4;
+      text-align: right;
+
+
+    }
+
+    .m1 {
+
+      background-color: #5cd2fd;
+    }
+
+    .m2 {
+      background-color: #ffc000;
+    }
+
+    .m3 {
+
+      background-color: #9900cc;
+    }
+
+    .mt1 {
+      color: #5cd2fd;
+    }
+
+    .mt2 {
+      color: #ffc000;
+    }
+
+    .mt3 {
+      color: #9900cc;
+    }
+
+    .aci {
+      color: white;
+      margin-top: 16px;
+    }
+
+    /*  Toggle Switch  */
+
+.toggleSwitch span span {
+  display: none;
+}
+
+@media only screen {
+  .toggleSwitch {
+    display: inline-block;
+    height: 17px;
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    margin-left: 74px;
+    cursor: pointer;
+    width:106px;
+  }
+  .toggleSwitch * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .toggleSwitch label,
+  .toggleSwitch > span {
+    line-height: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  .toggleSwitch input:focus ~ a,
+  .toggleSwitch input:focus + label {
+    outline: none;
+  }
+  .toggleSwitch label {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+  }
+  .toggleSwitch input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+  }
+  .toggleSwitch > span {
+    position: absolute;
+    left: -50px;
+    width: 100%;
+    margin: 0;
+    padding-right: 50px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .toggleSwitch > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 0.9em;
+    width: 100%;
+    left: 15%;
+    top: -1px;
+    opacity: 0;
+  }
+  .toggleSwitch a {
+    position: absolute;
+    right: 50%;
+    z-index: 4;
+    display: block;
+    height: 100%;
+    padding: 0;
+    left: 2px;
+    width: 18px;
+    background-color: #00bc8c;
+    border: 1px solid #CCC;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  .toggleSwitch > span span:first-of-type {
+    color: rgba(20, 1, 1, 0.877);
+    opacity: 1;
+    left: 25%;
+  }
+  .toggleSwitch > span:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50px;
+    top: -2px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .toggleSwitch input:checked ~ a {
+    border-color: #fff;
+    left: 100%;
+    margin-left: -21px;
+  }
+  .toggleSwitch input:checked ~ span:before {
+    border-color: #fafafa;
+    box-shadow: inset 0 0 0 30px #fafafa;
+  }
+  .toggleSwitch input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+  .toggleSwitch input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: black;
+  }
+  /* Switch Sizes */
+  .toggleSwitch.large {
+    width: 60px;
+    height: 27px;
+  }
+  .toggleSwitch.large a {
+    width: 27px;
+  }
+  .toggleSwitch.large > span {
+    height: 29px;
+    line-height: 28px;
+  }
+  .toggleSwitch.large input:checked ~ a {
+    left: 41px;
+  }
+  .toggleSwitch.large > span span {
+    font-size: 1.1em;
+  }
+  .toggleSwitch.large > span span:first-of-type {
+    left: 50%;
+  }
+  .toggleSwitch.xlarge {
+    width: 80px;
+    height: 36px;
+  }
+  .toggleSwitch.xlarge a {
+    width: 36px;
+  }
+  .toggleSwitch.xlarge > span {
+    height: 38px;
+    line-height: 37px;
+  }
+  .toggleSwitch.xlarge input:checked ~ a {
+    left: 52px;
+  }
+  .toggleSwitch.xlarge > span span {
+    font-size: 1.4em;
+  }
+  .toggleSwitch.xlarge > span span:first-of-type {
+    left: 50%;
+  }
+}
+
+
+
+/*  End Toggle Switch  */
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 6.5em;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+.mtr
+{
+  margin-top: 0px!important;
+}
+
+ .SC {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #5cd2fd 60%),
+    linear-gradient(135deg, #5cd2fd 40%, transparent 50%) !important;
+  background-position:
+    calc(100% - 30px) 14px,
+    calc(100% - 20px) 14px,
+    100% 0;
+  background-size:
+    10px 10px,
+    10px 10px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} 
+
+.ac
+{
+  color:#00948b;
+}
+.ac:hover
+{
+  color:white!important;
+}
+.arrow
+{
+  height:23px;
+}
+.navbar-dark {
+    border-color: #2cbebb!important;
+}
+  </style>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed ">
+  <div class="wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+      <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light nvc hide">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link hide" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          <a class="nav-link" href="index.html" role="button"><i class="fas fa-arrow-left"></i></a>
+        </li>
+
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+
+
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <nav class="main-header navbar navbar-expand  navbar-dark nvc " style="background-color: #2cbebb;">
+      <!-- Left navbar links -->
+
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link hide" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          <a class="nav-link pln" href="individualprop.html" role="button"><i class="fas fa-arrow-left"></i></a>
+        </li>
+
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="brand" href="#">
+            <div class="hh">HOTEL 1</div>
+            <div class="hsh">T.Nager</div>
+          </a>
+
+        </li>
+
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+
+        <li class="nav-item ">
+          <a class="nav-link" href="authentication.html"
+            style="padding-left:0px!important;padding-right:0px!important;">
+
+            <i class="fa fa-key ci"></i>
+
+
+          </a>
+        </li>
+
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="alerts.html">
+            <i class="fas fa-bell ci"></i>
+            <span class="badge badge-warning navbar-badge mi">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+
+
+
+
+
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">Rasp Admin</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Ansari</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="page1.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Page 1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="page2.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Page 2</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="page3.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Page 3</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  Other Options
+                  <i class="fas fa-angle-left right"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>demo 1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>demo 2</p>
+                  </a>
+                </li>
+
+
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="margin-top: 61px;">
+
+      <!-- Main content -->
+      <!-- Main content -->
+
+
+      <div class="tab-content" id="custom-content-below-tabContent">
+        <div class="tab-pane fade  show active" id="custom-content-below-home" role="tabpanel"
+          aria-labelledby="custom-content-below-home-tab">
+
+          <div class="main-header " style="width:100%;background-color: #5cd2fd;padding:4px;">
+
+            <div class="row">
+
+              <div class="col-8">
+                <span class="t1">Point of Sales</span>
+                <span class="t2">(SALES)</span>
+              </div>
+              <div class="col-4">
+                <!-- select -->
+                <div class="form-group" style="margin-bottom: 0px!important;">
+
+                  <select class="form-control fcc">
+                    <option>Today</option>
+                    <option>Last 7 Days</option>
+                    <option>Last 30 Days</option>
+                    <option>Current Month</option>
+                    <option>Last Month</option>
+                    <option>For the Date Range</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
+          <section class="content">
+
+
+
+            <div class="container-fluid">
+
+
+              <div class="row">
+                <div class="col-12">
+
+                  <!-- BAR CHART -->
+                  <div class="card card-info mt-2">
+                    <div class="card-header brr">
+                      <h3 class="card-title">AC Restraurant</h3>
+
+
+                    </div>
+                    <div class="card-body" style="padding: 5px!important;">
+
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="card-body small_box">
+
+                            <div class="callout callout-danger sm_inside calloutright1">
+
+                              <div class="row">
+                                <div class="col-12 pn acl">
+                                  <span class="acl1"> Table Service</span>
+
+
+                                </div>
+
+                                <div class="col-12 pn acr">
+                                  <span>87000.00</span>
+
+
+                                </div>
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="card-body small_box">
+
+                            <div class="callout callout-danger sm_inside calloutright2">
+
+                              <div class="row">
+                                <div class="col-12 pn acl">
+                                  <span class="acl2"> Take Away</span>
+
+
+                                </div>
+
+                                <div class="col-12 pn acr">
+                                  <span>87000.00</span>
+
+
+                                </div>
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="card-body small_box">
+
+                            <div class="callout callout-danger sm_inside calloutright3">
+
+                              <div class="row">
+                                <div class="col-12 pn acl">
+                                  <span class="acl3"> Room Service</span>
+
+
+                                </div>
+
+                                <div class="col-12 pn acr">
+                                  <span>87000.00</span>
+
+
+                                </div>
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="col-5">
+
+
+                          <div class="card">
+                            <div class="card-body pn">
+                              <div class="row">
+                                <div class="col-3 m1">
+
+                                  <i class="fas fa-money-bill-wave aci"></i>
+
+                                </div>
+
+                                <div class="col-9">
+
+                                  <div class="row">
+                                    <div class="col-12 acl">
+                                      <span class="mt1">Cash</span>
+                                    </div>
+
+                                    <div class="col-12 acr">
+
+                                      <span class="pr-1">16000.00</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+
+
+
+
+                              </div>
+
+
+
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-body pn">
+                              <div class="row">
+                                <div class="col-3 m2">
+
+                                  <i class="fas fa-credit-card aci"></i>
+
+                                </div>
+
+                                <div class="col-9">
+
+                                  <div class="row">
+                                    <div class="col-12 acl">
+                                      <span class="mt2">Card</span>
+                                    </div>
+
+                                    <div class="col-12 acr">
+
+                                      <span class="pr-1">16000.00</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+
+
+
+
+                              </div>
+
+
+
+                            </div>
+                          </div>
+
+
+                          <div class="card">
+                            <div class="card-body pn">
+                              <div class="row">
+                                <div class="col-3 m3">
+
+                                  <i class="fas fa-person-booth aci"></i>
+
+                                </div>
+
+                                <div class="col-9">
+
+                                  <div class="row">
+                                    <div class="col-12 acl">
+                                      <span class="mt3">Room Service</span>
+                                    </div>
+
+                                    <div class="col-12 acr">
+
+                                      <span class="pr-1">16000.00</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+
+
+
+
+                              </div>
+
+
+
+                            </div>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+
+
+
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="row">
+                <div class="col-12">
+
+                  <!-- BAR CHART -->
+                  <div class="card card-info mt-2" style="margin-bottom: 85px;">
+                    <div class="card-header brr">
+                      <h3 class="card-title">AC Restraurant Revenue Comparison</h3>
+
+                      <div class="card-tools hide">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="chart">
+                        <canvas id="myChart"
+                          style="min-height: 179px; height: 183px; max-height: 208px; max-width: 100%;"></canvas>
+                      </div>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </section>
+        </div>
+        <div class="tab-pane fade " id="custom-content-below-profile" role="tabpanel"
+          aria-labelledby="custom-content-below-profile-tab">
+          <div class="main-header " style="width:100%;background-color: #5cd2fd;padding:4px;">
+
+            <div class="row">
+
+              <div class="col-8">
+                <span class="t1">Point of Sales</span>
+                <span class="t2" id="headertxt"></span>
+              </div>
+              <div class="col-4">
+                <!-- select -->
+                <div class="form-group" style="margin-bottom: 0px!important;">
+
+                  <select class="form-control fcc">
+                    <option>Today</option>
+                    <option>Last 7 Days</option>
+                    <option>Last 30 Days</option>
+                    <option>Current Month</option>
+                    <option>Last Month</option>
+                    <option>For the Date Range</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
+          <!--my work here start-->
+
+
+          <div class="row m-2">
+
+            <div class="col-12">
+              <div class="card card-info mt-2" >
+                <div class="card-header brr">
+                  <h3 class="card-title">AC Restraurant </h3>
+
+
+  <div class="hide">                             
+  <label class="toggleSwitch nolabel" onclick=""  style="margin-bottom: 0px!important;">
+    <input type="checkbox" checked />
+    <span>
+        <span>Group wise</span>
+        <span>Item wise</span>
+    </span>
+    <a></a>
+</label>
+</div>  
+
+               
+
+                  
+                </div>
+                <div class="card-body">
+
+
+                  <div class="form-group">
+                    
+                    <select class="form-control SC" id="item_select">
+                      <option value="Items_Sold" >Items Sold</option>
+                      <option value="Cancelled_Items">Cancelled Items</option>
+                      <option value="MostSold_Items">Most Sold Items</option>
+                      <option value="LeastSold_Items">Least Sold Items</option>
+                    </select>
+                  </div>
+
+
+              
+                
+   
+
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+
+
+
+
+
+            </div>
+
+            <div class="col-12 Items" style="margin-bottom: 85px;display:none;" id="Items_Sold">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h3 class="card-title">Items Sold</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="padding: 5px;">
+                  <table id="example2" class="table table-bordered table-striped">
+                    <thead style="background-color: #5cd2fd;">
+                    <tr>
+                      <th>Items</th>
+                      <th>Qty</th>
+                      <th colspan="">Amount</th>
+                      <th></th>
+                    
+                    </tr>
+                    </thead>
+                
+                    <tbody>
+                    
+                     
+                  
+                    <tr>
+                      <td>Itly</td>
+                      <td>3</td>
+                      <td>15</td>
+                         <td><a href="#" class="ml-2"> <img src="arrow.png" class="arrow mtr"></a</td>
+                    
+                    </tr>
+                    <tr>
+                      <td>Dhosa</td>
+                      <td>10</td>
+                      <td>100</td>
+                       <td><a href="#" class="ml-2"> <img src="arrow.png" class="arrow mtr"></a</td>
+                    
+                    </tr>
+                 
+                    <tr>
+                      <td>Vadai (South Indian)</td>
+                      <td>15</td>
+                      <td>75 </td>
+                      <td><a href="#" class="ml-2"> <img src="arrow.png" class="arrow mtr"></a</td>
+                    
+                    </tr>
+
+                    <tr>
+                      <td>chappathi</td>
+                      <td>4</td>
+                      <td>40</td>
+                       <td><a href="#" class="ml-2"> <img src="arrow.png" class="arrow mtr"></a</td>
+                    
+                    </tr>
+
+                    <tr>
+                      <td>Poori</td>
+                      <td>13</td>
+                      <td>215</td>
+                       <td><a href="#" class="ml-2"> <img src="arrow.png" class="arrow mtr"></a</td>
+                    
+                    </tr>
+                    </tbody>
+                    <tfoot class="hide">
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+
+                    
+                    </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+
+            <div class="col-12 Items" style="margin-bottom: 85px;display:none;" id="Cancelled_Items">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h3 class="card-title">Cancelled Items</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="padding: 5px;">
+
+                  <div class="form-group">
+                    
+                    <select class="form-control SC" id="reason">
+                      <option value="0" >Select Reason</option>
+                      <option value="1">Wrong Entry</option>
+                      <option value="2">Item not Available</option>
+                      <option value="3">Delay Food</option>
+                      <option value="4">Food not good</option>
+                      <option value="5">Wrong Order</option>
+                      <option value="6">Software Testing</option>
+
+                    </select>
+                  </div>
+                
+                  <div id="canceltable_div">
+                    <table id="canceltable" class="table table-bordered table-striped canceltable">
+                      <thead style="background-color: #5cd2fd;">
+                      <tr>
+                        <th>Items</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                      
+                      </tr>
+                      </thead>
+                  
+                      <tbody>
+                      
+                       
+                    
+                      <tr >
+                        <td>Itly</td>
+                        <td>3</td>
+                        <td>15</td>
+                      
+                      </tr>
+                      <tr >
+                        <td>Dhosa</td>
+                        <td>10</td>
+                        <td>100</td>
+                      
+                      </tr>
+                   
+                      <tr >
+                        <td>Vadai (South Indian)</td>
+                        <td>15</td>
+                        <td>75 </td>
+                      
+                      </tr>
+  
+                      <tr class="item_not_available">
+                        <td>chappathi</td>
+                        <td>4</td>
+                        <td>40</td>
+                      
+                      </tr>
+  
+                      </tbody>
+                      <tfoot class="hide">
+                      <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                      
+                      </tr>
+                      </tfoot>
+                    </table>
+  
+                  </div>
+                
+                  <div id="wrong_entry_div">
+                    <table id="wrong_entry" class="table table-bordered table-striped canceltable">
+                      <thead style="background-color: #5cd2fd;">
+                      <tr>
+                        <th>Items</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                      
+                      </tr>
+                      </thead>
+                  
+                      <tbody>
+                      
+                       
+                    
+                      <tr >
+                        <td>Itly</td>
+                        <td>3</td>
+                        <td>15</td>
+                      
+                      </tr>
+                      <tr >
+                        <td>Dhosa</td>
+                        <td>10</td>
+                        <td>100</td>
+                      
+                      </tr>
+                   
+               
+  
+                      </tbody>
+                      <tfoot class="hide">
+                      <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                      
+                      </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+               
+
+                  <div id="item_not_available_div">
+
+                    <table id="item_not_available" class="table table-bordered table-striped canceltable">
+                      <thead style="background-color: #5cd2fd;">
+                      <tr>
+                        <th>Items</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                      
+                      </tr>
+                      </thead>
+                  
+                      <tbody>
+                      
+                       
+                    
+                 
+  
+                      <tr class="item_not_available">
+                        <td>chappathi</td>
+                        <td>4</td>
+                        <td>40</td>
+                      
+                      </tr>
+  
+                      </tbody>
+                      <tfoot class="hide">
+                      <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                      
+                      </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+
+             
+
+                  <div id="delay_food_div">
+                      
+                  <table id="delay_food" class="table table-bordered table-striped canceltable">
+                    <thead style="background-color: #5cd2fd;">
+                    <tr>
+                      <th>Items</th>
+                      <th>Qty</th>
+                      <th>Amount</th>
+                    
+                    </tr>
+                    </thead>
+                
+                    <tbody>
+                      <tr class="item_not_available">
+                        <td>chicken 65</td>
+                        <td>4</td>
+                        <td>400</td>
+                      
+                      </tr>
+
+                    </tbody>  
+                    
+                     
+                  
+                   
+                 
+                   
+                    
+                  </table>
+                  </div>
+
+
+
+                  <div id="food_not_good_div">
+                      
+                    <table id="food_not_good" class="table table-bordered table-striped canceltable">
+                      <thead style="background-color: #5cd2fd;">
+                      <tr>
+                        <th>Items</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                      
+                      </tr>
+                      </thead>
+                  
+                      <tbody>
+                        <tr class="item_not_available">
+                          <td>fish</td>
+                          <td>4</td>
+                          <td>40</td>
+                        
+                        </tr>
+
+                        <tr class="item_not_available">
+                          <td>Meals</td>
+                          <td>4</td>
+                          <td>40</td>
+                        
+                        </tr>
+  
+  
+                      </tbody>  
+                      
+                       
+                    
+                     
+                   
+                     
+                      
+                    </table>
+                    </div>
+
+
+
+                    <div id="wrong_order_div">
+                      
+                      <table id="wrong_order" class="table table-bordered table-striped canceltable">
+                        <thead style="background-color: #5cd2fd;">
+                        <tr>
+                          <th>Items</th>
+                          <th>Qty</th>
+                          <th>Amount</th>
+                        
+                        </tr>
+                        </thead>
+                    
+                        <tbody>
+                          
+                            <tr class="item_not_available">
+                              <td>Ice cream</td>
+                              <td>4</td>
+                              <td>40</td>
+                            
+                            </tr>
+
+
+                          </tr>
+    
+    
+                        </tbody>  
+                        
+                         
+                      
+                       
+                     
+                       
+                        
+                      </table>
+                      </div>
+
+
+                      <div id="software_testing_div">
+                      
+                        <table id="software_testing" class="table table-bordered table-striped canceltable">
+                          <thead style="background-color: #5cd2fd;">
+                          <tr>
+                            <th>Items</th>
+                            <th>Qty</th>
+                            <th>Amount</th>
+                          
+                          </tr>
+                          </thead>
+                      
+                          <tbody>
+      
+      
+                          </tbody>  
+                          
+                           
+                        
+                         
+                       
+                         
+                          
+                        </table>
+                        </div>  
+  
+
+
+
+
+                  
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+
+
+            <div class="col-12 Items" style="margin-bottom: 85px;display:none;" id="MostSold_Items">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h3 class="card-title">Most Sold Items</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="padding: 5px;">
+                  <table id="example3" class="table table-bordered table-striped">
+                    <thead style="background-color: #5cd2fd;">
+                    <tr>
+                      <th>Items</th>
+                      <th>Qty</th>
+                      <th>Amount</th>
+                    
+                    </tr>
+                    </thead>
+                
+                    <tbody>
+                    
+                     
+                  
+                    <tr>
+                      <td>Itly</td>
+                      <td>3</td>
+                      <td>15</td>
+                    
+                    </tr>
+                    <tr>
+                      <td>Dhosa</td>
+                      <td>10</td>
+                      <td>100</td>
+                    
+                    </tr>
+                 
+                    <tr>
+                      <td>Vadai (South Indian)</td>
+                      <td>15</td>
+                      <td>75 </td>
+                    
+                    </tr>
+
+                    <tr>
+                      <td>chappathi</td>
+                      <td>4</td>
+                      <td>40</td>
+                    
+                    </tr>
+
+                    <tr>
+                      <td>Poori</td>
+                      <td>13</td>
+                      <td>215</td>
+                      
+                    
+                    </tr>
+                    </tbody>
+                    <tfoot class="hide">
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+                    
+                    </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+
+            <div class="col-12 Items" style="margin-bottom: 85px;display:none;" id="LeastSold_Items">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h3 class="card-title">Least Sold Items</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="padding: 5px;">
+                  <table id="example4" class="table table-bordered table-striped">
+                    <thead style="background-color: #5cd2fd;">
+                    <tr>
+                      <th>Items</th>
+                      <th>Qty</th>
+                      <th>Amount</th>
+                    
+                    </tr>
+                    </thead>
+                
+                    <tbody>
+                    
+                     
+                  
+                    <tr>
+                      <td>Itly</td>
+                      <td>3</td>
+                      <td>15 </td>
+                    
+                    </tr>
+                    <tr>
+                      <td>Dhosa</td>
+                      <td>10</td>
+                      <td>100</td>
+                    
+                    </tr>
+                 
+                    <tr>
+                      <td>Vadai (South Indian)</td>
+                      <td>15</td>
+                      <td>75 </td>
+                    
+                    </tr>
+
+                    <tr>
+                      <td>chappathi</td>
+                      <td>4</td>
+                      <td>40</td>
+                    
+                    </tr>
+
+                    <tr>
+                      <td>Poori</td>
+                      <td>13</td>
+                      <td>215</td>
+                    
+                    </tr>
+                    </tbody>
+                    <tfoot class="hide">
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+                    
+                    </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+
+          </div>
+
+          
+
+
+
+
+          <!--my work here end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+      <ul class="nav nav-tabs footer" id="custom-content-below-tab" role="tablist">
+        <li class="nav-item">
+
+          <a class="nav-link active ac" id="custom-content-below-home-tab" data-toggle="pill"
+            href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">
+           
+            <img src="sales.png" alt="sales" width=40px height=40px ><br>Sales</a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link ac" id="custom-content-below-profile-tab" data-toggle="pill"
+            href="#custom-content-below-profile" role="tab" aria-controls="custom-content-below-profile"
+            aria-selected="false">
+           
+             <img src="items.png" alt="items" width=40px height=40px><br>Items</a>
+        </li>
+
+      </ul>
+
+
+      <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Default Modal</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard.js"></script>
+
+  <!-- FLOT CHARTS -->
+  <script src="plugins/flot/jquery.flot.js"></script>
+  <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+  <script src="plugins/flot/plugins/jquery.flot.resize.js"></script>
+  <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+  <script src="plugins/flot/plugins/jquery.flot.pie.js"></script>
+
+  <!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <script> 
+    //myscript start
+
+    $(document).ready(function(){
+    //  $("#item_select").change();
+    $('#item_select').on('change', function() {
+    
+     // alert('test');
+      //If red is selected, show red, hide yellow and blue.
+      if ( this.value == 'Items_Sold')
+      {
+        $("#Items_Sold").show();
+        $("#Cancelled_Items").hide();
+        $("#MostSold_Items").hide();
+        $("#LeastSold_Items").hide();
+        $("#reason").hide();
+        $('#headertxt').text('(ITEMS SOLD)');
+      
+      }
+      
+       //If yellow is selected, show yellow, hide red and blue.
+      if ( this.value == 'Cancelled_Items')
+      {
+        $("#Items_Sold").hide();
+        $("#Cancelled_Items").show();
+        $("#MostSold_Items").hide();
+        $("#LeastSold_Items").hide();
+        $("#reason").show();
+        $('#headertxt').text('(CANCELLED ITEMS)');
+
+        $('#canceltable_div').show();
+        $('#wrong_entry_div').hide();
+
+        $('#item_not_available_div').hide();
+
+        $('#delay_food_div').hide();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').hide();
+
+        $('#software_testing_div').hide();
+
+
+
+
+       // $('#item_not_available').hide();
+      
+       
+      
+      }
+      if ( this.value == 'MostSold_Items')
+      {
+        $("#Items_Sold").hide();
+        $("#Cancelled_Items").hide();
+        $("#MostSold_Items").show();
+        $("#LeastSold_Items").hide();
+        $('#headertxt').text('(MOST SOLD ITEMS)');
+      
+      }
+      if ( this.value == 'LeastSold_Items')
+      {
+        $("#Items_Sold").hide();
+        $("#Cancelled_Items").hide();
+        $("#MostSold_Items").hide();
+        $("#LeastSold_Items").show();
+        $("#reason").hide();
+        $('#headertxt').text('(LEAST SOLD ITEMS)');
+      
+      
+      }
+      
+    }).change();
+
+
+    $('#reason').on('change', function() {
+    
+    //If red is selected, show red, hide yellow and blue.
+         
+   if($('#item_select').val()=='Cancelled_Items')
+   {
+    // alert(this.value);
+      if (this.value == 0)
+      {
+       // alert(1);
+        $('#canceltable_div').show();
+        $('#wrong_entry_div').hide();
+
+        $('#item_not_available_div').hide();
+
+        $('#delay_food_div').hide();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').hide();
+
+        $('#software_testing_div').hide();
+
+      }
+
+      if (this.value == 1)
+      {
+      //  alert(2);
+        $('#canceltable_div').hide();
+        $('#wrong_entry_div').show();
+
+        $('#item_not_available_div').hide();
+
+        $('#delay_food_div').hide();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').hide();
+
+        $('#software_testing_div').hide();
+
+      }
+      if (this.value == 2)
+      {
+      //  alert(3);
+        
+        $('#canceltable_div').hide();
+        $('#wrong_entry_div').hide();
+
+        $('#item_not_available_div').show();
+
+        $('#delay_food_div').hide();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').hide();
+
+        $('#software_testing_div').hide();
+      }
+      if (this.value == 3)
+      {
+        $('#canceltable_div').hide();
+        $('#wrong_entry_div').hide();
+
+        $('#item_not_available_div').hide();
+
+        $('#delay_food_div').show();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').hide();
+
+        $('#software_testing_div').hide();
+      }
+
+      if (this.value == 4)
+      {
+        $('#canceltable_div').hide();
+        $('#wrong_entry_div').hide();
+
+        $('#item_not_available_div').hide();
+
+        $('#delay_food_div').show();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').hide();
+
+        $('#software_testing_div').hide();
+      }
+
+      if (this.value == 5)
+      {
+        $('#canceltable_div').hide();
+        $('#wrong_entry_div').hide();
+
+        $('#item_not_available_div').hide();
+
+        $('#delay_food_div').hide();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').show();
+
+        $('#software_testing_div').hide();
+      }
+      if (this.value == 6)
+      {
+        $('#canceltable_div').hide();
+        $('#wrong_entry_div').hide();
+
+        $('#item_not_available_div').hide();
+
+        $('#delay_food_div').hide();
+
+        $('#food_not_good_div').hide();
+
+        $('#wrong_order_div').hide();
+
+        $('#software_testing_div').show();
+      }
+      }
+    
+  }).change();
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+//reason click
+
+
+    //myscript end
+
+  </script>
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#example3').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#example4').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+
+      $('#canceltable').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#wrong_entry').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#item_not_available').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#delay_food').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#food_not_good').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#wrong_order').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+      $('#software_testing').DataTable({
+        "paging": false,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": false,
+        "autoWidth": true,
+        "responsive": false,
+        "oLanguage": { "sSearch": "" } 
+      });
+    });
+  </script>
+  <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+
+    var gradientStroke = ctx.createLinearGradient(5, 10, 15, 20);
+    gradientStroke.addColorStop(0, "#007bff");
+    gradientStroke.addColorStop(1, "#5bd0fd");
+
+    var gradientFill = ctx.createLinearGradient(5, 10, 15, 20);
+    gradientFill.addColorStop(0, "rgba(128, 182, 244, 0.6)");
+    gradientFill.addColorStop(1, "#88d9f587");
+
+    var myChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
+        datasets: [
+          {
+            label: "AC Restraurant",
+            borderColor: gradientStroke,
+            pointBorderColor: gradientStroke,
+            pointBackgroundColor: gradientStroke,
+            pointHoverBackgroundColor: gradientStroke,
+            pointHoverBorderColor: gradientStroke,
+            pointBorderWidth: 3,
+            pointHoverRadius: 10,
+            pointHoverBorderWidth: 1,
+            pointRadius: 3,
+            fill: true,
+            backgroundColor: gradientFill,
+            borderWidth: 4,
+            data: [13, 8, 15, 11, 9, 13, 15, 19]
+          }
+        ]
+      },
+      options: {
+        legend: {
+          position: "bottom"
+        },
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                fontColor: "rgba(0,0,0,0.5)",
+                fontStyle: "bold",
+                beginAtZero: true,
+                maxTicksLimit: 5,
+                padding: 20
+              },
+              gridLines: {
+                drawTicks: false,
+                display: false
+              }
+            }
+          ],
+          xAxes: [
+            {
+              gridLines: {
+                zeroLineColor: "transparent"
+              },
+              ticks: {
+                padding: 20,
+                fontColor: "rgba(0,0,0,0.5)",
+                fontStyle: "bold"
+              }
+            }
+          ]
+        }
+      }
+    });
+
+  </script>
+</body>
+
+</html>

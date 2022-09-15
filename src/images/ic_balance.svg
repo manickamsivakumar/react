@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_balance" transform="translate(83 -775)">
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(-83 775)" fill="none" stroke="#028cf3" stroke-width="1.5">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="11.25" fill="none"/>
+    </g>
+    <g id="currency_rupee_black_24dp" transform="translate(-83 775)">
+      <g id="Group_66" data-name="Group 66">
+        <rect id="Rectangle_77" data-name="Rectangle 77" width="24" height="24" fill="none"/>
+      </g>
+      <g id="Group_68" data-name="Group 68" transform="translate(2 2.5)">
+        <g id="Group_67" data-name="Group 67" transform="translate(6 3)">
+          <path id="Path_102" data-name="Path 102" d="M11.745,6a2.62,2.62,0,0,0-2.37-1.5H6V3h9V4.5H12.555A4.114,4.114,0,0,1,13.342,6H15V7.5H13.485a4.127,4.127,0,0,1-4.11,3.75H8.828l5.047,5.25H11.8L6.75,11.25V9.75H9.375A2.62,2.62,0,0,0,11.97,7.5H6V6Z" transform="translate(-6 -3)" fill="#028cf3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

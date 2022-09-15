@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_sales" transform="translate(38 -571)">
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="24" height="24" transform="translate(-38 571)" fill="none"/>
+    <g id="Group_65" data-name="Group 65" transform="translate(0 6.5)">
+      <path id="Path_101" data-name="Path 101" d="M-35,581l7-7,5,5,6-6" fill="none" stroke="#028cf3" stroke-width="1.5"/>
+      <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(-37.5 578.5)" fill="#fff" stroke="#028cf3" stroke-width="1.5">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+      </g>
+      <g id="Ellipse_22" data-name="Ellipse 22" transform="translate(-30.5 571.5)" fill="#fff" stroke="#028cf3" stroke-width="1.5">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+      </g>
+      <g id="Ellipse_23" data-name="Ellipse 23" transform="translate(-25.5 576.5)" fill="#fff" stroke="#028cf3" stroke-width="1.5">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+      </g>
+      <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(-19.5 570.5)" fill="#fff" stroke="#028cf3" stroke-width="1.5">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="ic_dues" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_103" data-name="Path 103" d="M0,0H24V24H0Z" fill="none"/>
+  <g id="Group_69" data-name="Group 69">
+    <path id="Path_104" data-name="Path 104" d="M19.5,3.5,18,2,16.5,3.5,15,2,13.5,3.5,12,2,10.5,3.5,9,2,7.5,3.5,6,2V16H3v3a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V2Zm-4,17H5.5a1,1,0,0,1-1-1v-2h11Zm4-1c0,.55-.7,1-1.25,1S17,20.05,17,19.5V16H7.5V5h12Z" fill="#028cf3"/>
+    <path id="Path_105" data-name="Path 105" d="M0,0H6V1.5H0Z" transform="translate(9 7)" fill="#028cf3"/>
+    <path id="Path_106" data-name="Path 106" d="M.5,0H2V1.5H.5Z" transform="translate(16 7)" fill="#028cf3"/>
+    <path id="Path_107" data-name="Path 107" d="M0,0H6V1.5H0Z" transform="translate(9 10)" fill="#028cf3"/>
+    <path id="Path_108" data-name="Path 108" d="M.5,0H2V1.5H.5Z" transform="translate(16 10)" fill="#028cf3"/>
+  </g>
+</svg>
